@@ -88,11 +88,13 @@
            }
         .leftsec{
              font-size: 3rem;
+             
             
              
            }
         .rightsec img{
-            width: 80%;
+            width: 45%;
+            padding-left:35%;
           
         }
         .purple{
@@ -338,6 +340,79 @@
 .project-card:hover .view-btn {
   display: inline-block;
 }
+/* contact me */
+#contact {
+  padding: 60px 20px;
+  background: ivory;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-card {
+  background: rgb(225, 180, 180);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  color: #060505;
+}
+
+.info-card h3 {
+  margin-bottom: 5px;
+  color: #007bff;
+  
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #282525;
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #060505;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 14px;
+  border: none;
+  background: #007bff;
+  color: rgb(24, 22, 22);
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
 
 
 
@@ -356,7 +431,7 @@
                 <li> <a href="#skills">Skills</a> </li>
                 <li> <a href="#projects">Projects</a> </li>
                 <li> <a href=""> Services</a></li>
-                <li> <a href=""> Contact</a> </li>
+                <li> <a href="#contact"> Contact</a> </li>
                 
             </ul>
         </div>
@@ -526,6 +601,46 @@ function toggleDescription(btn) {
 });
 
   </script>
+  <section id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <div class="contact-container">
+    
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <div class="info-card">
+        <h3>📍 Address</h3>
+        <p> Barhan ,Etmadpur,Agra, Uttar Pradesh, India</p>
+      </div>
+      <div class="info-card">
+        <h3>📧 Email</h3>
+        <a href="vipuday8449@gmail.com">vipuday8449@gmail.com</a>
+      </div>
+      <div class="info-card">
+        <h3>📞 Phone</h3>
+        <p>+91-8449421657</p>
+      </div>
+      <div class="info-card">
+        <h3>🤝 Linkedin</h3>
+        <a href="www.linkedin.com/in/uday-yadav-b93524326">Uday_yadav_linkedin</a>
+      </div>
+      <div class="info-card">
+        <h3>🔗Git hub</h3>
+        <a href="https://github.com/Udayyadav123">Uday_yadav_github </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mrbajpak" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="contact" placeholder="Contact No." required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
     
 </body>
 </html>
